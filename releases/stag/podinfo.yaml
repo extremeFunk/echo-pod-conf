@@ -10,12 +10,12 @@ metadata:
 spec:
   releaseName: stage
   chart:
-    git: git@github.com:extremeFunk/echo-pod-conf
+    git: git@github.com:extremeFunk/echo-pod-conf.git
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: us.gcr.io/echo-final-project/echo.git
+      repository: us.gcr.io/echo-final-project/echo
       tag: v1.2
     replicaCount: 2
     hpa:
