@@ -15,7 +15,7 @@ spec:
     ref: master
   values:
     image:
-      repository: us.gcr.io/echo-final-project/echo
+      repository: us.gcr.io/echo-final-project/echo.git
       tag: v1.2
     replicaCount: 2
     hpa:
