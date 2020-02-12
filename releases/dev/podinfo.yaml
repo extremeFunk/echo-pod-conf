@@ -22,4 +22,9 @@ spec:
       enabled: false
     configMap:
       persist: false
-    hostname: echo-dev.mooo.com
+    ingress:
+      hosts:
+        - host: echo-dev.mooo.com
+      tls:
+        - hosts:
+            - echo-dev.mooo.com

@@ -22,4 +22,9 @@ spec:
       enabled: false
     configMap:
       dbname: echo-stage
-    hostname: echo-stage.mooo.com
+    ingress:
+      hosts:
+        - host: echo-stage.mooo.com
+      tls:
+        - hosts:
+            - echo-stage.mooo.com

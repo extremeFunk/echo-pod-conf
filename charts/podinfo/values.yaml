@@ -54,11 +54,11 @@ ingress:
     cert-manager.io/issuer: "echo"
 
   hosts:
-    - host: "{{ .Values.hostname }}"
+    - host: echo-sun.mooo.com
       paths: [/]
   tls:
     - hosts:
-        - "{{ .Values.hostname }}"
+        - echo-sun.mooo.com
       secretName: echo-tls
 
 resources:
