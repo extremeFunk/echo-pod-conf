@@ -6,4 +6,4 @@ data:
   PORT: "{{ .Values.configMap.port }}"
   LOGLEVEL: "{{ .Values.configMap.loglevel }}"
   PERSIST: "{{ .Values.configMap.persist }}"
-  DBNAME: "{{Values.configMap.dbname}}"
+  DBNAME: "{{ Values.configMap.dbname }}"
