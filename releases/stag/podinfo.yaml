@@ -25,6 +25,7 @@ spec:
     ingress:
       hosts:
         - host: echo-stage.mooo.com
+          paths: [/]
       tls:
         - hosts:
             - echo-stage.mooo.com

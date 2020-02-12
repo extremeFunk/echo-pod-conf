@@ -51,7 +51,7 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.org/proxy-connect-timeout: "900s"
-    cert-manager.io/issuer: "echo"
+    cert-manager.io/cluster-issuer: "echo"
 
   hosts:
     - host: echo-sun.mooo.com
