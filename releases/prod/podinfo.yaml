@@ -6,7 +6,7 @@ metadata:
   namespace: production
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:1.0.*
+    filter.fluxcd.io/chart-image: sever:~1.0
 spec:
   releaseName: prod
   chart:
@@ -20,5 +20,3 @@ spec:
     replicaCount: 2
     hpa:
       enabled: false
-    configMap:
-      dbname: echo
