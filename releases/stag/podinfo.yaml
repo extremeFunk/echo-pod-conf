@@ -1,0 +1,25 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: echo-stage
+  namespace: staging
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:stage-*
+spec:
+  releaseName: stage
+  chart:
+    git: git@github.com:extremeFunk/echo-pod-conf
+    path: charts/podinfo
+    ref: master
+  values:
+    image:
+      repository: us.gcr.io/linen-cubist-267010/echo
+      tag: v1.2
+    replicaCount: 2
+    hpa:
+      enabled: false
+    configMap:
+      dbname: echo-stage
+    hostname: echo-stage.mooo.com
