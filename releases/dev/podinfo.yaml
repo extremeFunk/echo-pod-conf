@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: us.gcr.io/echo-final-project/echo
-      tag: v1.2
+      tag: dev-01230b23220bf5d46ff5eee1eba9a52193742709
     replicaCount: 2
     hpa:
       enabled: false
@@ -27,5 +27,5 @@ spec:
         - host: echo-dev.mooo.com
           paths: [/]
       tls:
-        - hosts:
-            - echo-dev.mooo.com
+      - hosts:
+        - echo-dev.mooo.com
