@@ -29,3 +29,4 @@ spec:
       tls:
       - hosts:
         - echo-dev.mooo.com
+        secretName: dev-tls
