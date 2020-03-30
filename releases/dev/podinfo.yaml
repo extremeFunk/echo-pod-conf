@@ -17,7 +17,7 @@ spec:
     image:
       repository: us.gcr.io/rainrobot-k8-project/echo
       tag: latest
-    replicaCount: 2
+    replicaCount: 1
     hpa:
       enabled: false
     configMap:
